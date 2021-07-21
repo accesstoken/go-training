@@ -1,10 +1,10 @@
-package assignments
+package main
 
 import (
 	"fmt"
 )
 
-func A15(){
+func main(){
 	var name string = "John"
 	var weather string = "raining"
 	var snack string = "macaroni and cheese"

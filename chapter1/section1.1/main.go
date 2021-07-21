@@ -1,7 +1,7 @@
-package assignments
+package main
 
 import "fmt"
 
-func A11() {
+func main() {
 	fmt.Println("Hello, World!")
 }

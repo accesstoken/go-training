@@ -1,8 +1,8 @@
-package assignments
+package main
 
 import "fmt"
 
-func A14(){
+func main(){
 	var name string = "Joe"
 	fmt.Printf("Hello %s!\n", name)
 }
