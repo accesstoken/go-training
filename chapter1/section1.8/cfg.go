@@ -1,7 +1,7 @@
 package main
 
 var (
-	Name string = "Joe"
-	Weather string = "sunny"
-	Snack string = "french fries"
+	name string = "Joe"
+	weather string = "sunny"
+	snack string = "french fries"
 )

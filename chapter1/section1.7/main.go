@@ -9,5 +9,5 @@ func formletter(name string, weather string, snack string){
 }
 
 func main(){
-	formletter(Name, Weather, Snack)
+	formletter(name, weather, snack)
 }

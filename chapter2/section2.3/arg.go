@@ -5,13 +5,12 @@ import (
 )
 
 var (
-	Name string
-	Shhh bool
+	name string
+	shhh bool
 )
 
-func init() {
-
-	flag.StringVar(&Name, "name", "<name>", "The name to say hello to")
-	flag.BoolVar(&Shhh, "shhh", false, "verbose")
+func arg() {
+	flag.StringVar(&name, "name", "<name>", "The name to say hello to")
+	flag.BoolVar(&shhh, "shhh", false, "verbose")
 	flag.Parse()
 }

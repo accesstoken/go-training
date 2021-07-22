@@ -5,7 +5,9 @@ import (
 )
 
 func main() {
-	if !Shhh {
-		fmt.Printf("Hello %s!\n", Name)
+	arg()
+
+	if !shhh {
+		fmt.Printf("Hello %s!\n", name)
 	}
 }

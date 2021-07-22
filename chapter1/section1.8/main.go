@@ -1,5 +1,5 @@
 package main
 
 func main() {
-	Formletter(Name, Weather, Snack)
+	formletter(name, weather, snack)
 }
