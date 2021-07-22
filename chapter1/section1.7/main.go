@@ -2,7 +2,6 @@ package main
 
 import (
 	"fmt"
-	"github.com/accesstoken/go-training/chapter1/section1.9/cfg"
 )
 
 func formletter(name string, weather string, snack string){
@@ -10,5 +9,5 @@ func formletter(name string, weather string, snack string){
 }
 
 func main(){
-	formletter(cfg.Name, cfg.Weather, cfg.Snack)
+	formletter(Name, Weather, Snack)
 }
