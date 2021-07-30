@@ -10,7 +10,10 @@ type Logger struct {
 }
 
 func (receiver Logger) Log(a ...interface{}) {
-	fmt.Fprintln(receiver.Writer,  a...)
+	if nil == receiver.Writer {
+		return
+	}
+	fmt.Fprintln(receiver.Writer, a...)
 }
 
 func (receiver Logger) Begin() {
