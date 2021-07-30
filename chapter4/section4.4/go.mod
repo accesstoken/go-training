@@ -1,4 +1,4 @@
-module github.com/accesstoken/go-training
+module github.com/accesstoken/go-training/blob/main/chapter4/section4.4
 
 go 1.16
 

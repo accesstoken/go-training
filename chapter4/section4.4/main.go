@@ -7,15 +7,14 @@ import (
 )
 
 func main() {
-	var log log.Logger
-	log.Writer = os.Stdout
-	//log.Writer = ioutil.Discard
-	log.Begin()
+	var logger log.Logger
+	logger.Writer = os.Stdout
+	//logger.Writer = ioutil.Discard
+	logger.Begin()
 	var name string = "Joe"
-	log.Logf("The name was %q\n", name)
+	logger.Logf("The name was %q\n", name)
 	var msg string = "Hello world!"
 	fmt.Println(msg)
-	log.Log("I said:", msg)
-
-	log.End()
+	logger.Log("I said:", msg)
+	logger.End()
 }
