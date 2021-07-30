@@ -9,10 +9,10 @@ import (
 func main() {
 	var logger log.Logger
 	logger.Writer = os.Stdout
-	//logger.Writer = ioutil.Discard
+	//log.Writer = ioutil.Discard
 	logger.Begin()
 	var name string = "Joe"
-	logger.Logf("The name was %q\n", name)
+	logger.Logf("The name was %q", name)
 	var msg string = "Hello world!"
 	fmt.Println(msg)
 	logger.Log("I said:", msg)

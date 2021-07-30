@@ -1,4 +1,4 @@
-package logger
+package log
 
 import (
 	"fmt"
@@ -13,10 +13,10 @@ func (receiver Logger) Log(a ...interface{}) {
 	fmt.Fprintln(receiver.Writer,  a...)
 }
 
-func (receiver Logger) Begin(a ...interface{}) {
+func (receiver Logger) Begin() {
 	receiver.Log("BEGIN")
 }
 
-func (receiver Logger) End(a ...interface{}) {
+func (receiver Logger) End() {
 	receiver.Log("END")
 }

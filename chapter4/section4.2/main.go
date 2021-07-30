@@ -2,20 +2,19 @@ package main
 
 import (
 	"fmt"
-	"github.com/accesstoken/go-training/chapter4/section4.2/logger"
+	"github.com/accesstoken/go-training/chapter4/section4.2/log"
 	"os"
 )
 
 func main() {
-	var log logger.Logger
-	log.Writer = os.Stdout
+	var logger log.Logger
+	logger.Writer = os.Stdout
 	//log.Writer = ioutil.Discard
-	log.Begin()
+	logger.Begin()
 	var name string = "Joe"
-	log.Logf("The name was %q\n", name)
+	logger.Logf("The name was %q", name)
 	var msg string = "Hello world!"
 	fmt.Println(msg)
-	log.Log("I said:", msg)
-
-	log.End()
+	logger.Log("I said:", msg)
+	logger.End()
 }
