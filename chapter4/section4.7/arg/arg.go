@@ -1,14 +1,15 @@
 package arg
 
-import "flag"
-
-var (
-	name string
-	shhh bool
+import (
+	"flag"
 )
 
-func arg() {
-	flag.StringVar(&name, "name", "<name>", "The name to say hello to")
-	flag.BoolVar(&shhh, "shhh", false, "verbose")
+var (
+	V bool
+)
+
+func Arg() {
+
+	flag.BoolVar(&V, "v", false, "verbose")
 	flag.Parse()
 }

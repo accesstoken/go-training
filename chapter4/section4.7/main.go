@@ -1,13 +1,21 @@
 package main
 
 import (
-	"fmt"
+	"github.com/accesstoken/go-log"
+	"go-training/chapter4/section4.7/arg"
+	"io"
+	"os"
 )
 
 func main() {
 	arg.Arg()
-	if !arg.Shhh {
-		fmt.Printf("Hello %s!\n", arg.Name)
+	var verbose = arg.V
+	var logger log.Logger
+	if verbose {
+		logger.Writer = os.Stdout
+	} else {
+		logger.Writer = io.Discard
 	}
-
+	logger.Begin()
+	logger.End()
 }
