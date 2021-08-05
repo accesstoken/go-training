@@ -6,6 +6,7 @@ import (
 )
 
 func main() {
+	arg.Parse()
 	if !arg.Shhh {
 		fmt.Printf("Hello %s!\n", arg.Name)
 	}
