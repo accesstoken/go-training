@@ -5,11 +5,10 @@ import (
 )
 
 var (
-	V bool
+	Verbose bool
 )
 
-func Arg() {
-
-	flag.BoolVar(&V, "v", false, "verbose")
+func init() {
+	flag.BoolVar(&Verbose, "v", false, "verbose")
 	flag.Parse()
 }

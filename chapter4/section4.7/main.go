@@ -8,10 +8,8 @@ import (
 )
 
 func main() {
-	arg.Arg()
-	var verbose = arg.V
 	var logger log.Logger
-	if verbose {
+	if arg.Verbose {
 		logger.Writer = os.Stdout
 	} else {
 		logger.Writer = io.Discard
