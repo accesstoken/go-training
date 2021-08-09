@@ -1,7 +1,8 @@
 package main
 
 import (
-	"github.com/accesstoken/go-log"
+	//"github.com/accesstoken/go-log"
+	"../go-log"
 	"go-training/chapter4/section4.7/arg"
 	"io"
 	"os"
