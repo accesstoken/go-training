@@ -6,9 +6,10 @@ import (
 	"os"
 )
 
-func Get() log.Logger{
+var Logger log.Logger
+
+func init(){
 	var logger log.Logger
 	logger.Writer = os.Stdout
-	leveledLogger := logger.Level(arg.Level)
-	return leveledLogger
+	Logger = logger.Level(arg.Level)
 }

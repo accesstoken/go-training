@@ -3,7 +3,8 @@ package main
 import "github.com/accesstoken/go-training/chapter4/section4.14/srv/logger"
 
 func main(){
-	var lg = logger.Get()
+	var lg = logger.Logger.Begin()
+	defer lg.End()
 	lg.Alert("This is an Alert.")
 	lg.Error("This is an Error.")
 	lg.Warn("This is a Warn.")
